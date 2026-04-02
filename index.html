@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+
+<style>
+
+body{
+    background-color: lightblue;
+    font-family: "Times New Roman";
+}
+
+.form-box{
+    background: white;
+    width: 500px;
+    margin:auto;
+    padding: 25px;
+}
+
+h1{
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
+
+input, select{
+    width: 95%;
+    padding: 6px;
+    margin-top: 4px;
+}
+
+textarea{
+    width: 80%;
+    height: 80px;
+}
+
+.submit-btn{
+    width: 100%;
+    background: lightblue;
+    color: white;
+    border:none;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.checkbox-row{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.gender-row{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.checkbox-row input,
+.gender-row input{
+    width: auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h1>Student Registration Form</h1>
+
+<form>
+
+<label>Student Name</label><br>
+<input type="text"><br><br>
+
+<table>
+
+<tr>
+<td>
+<label>Mobile No.</label><br>
+<input type="tel">
+</td>
+
+<td>
+<label>Email Id</label><br>
+<input type="email">
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Father Name</label><br>
+<input type="text">
+</td>
+
+<td>
+<label>Mother Name</label><br>
+<input type="text">
+</td>
+</tr>
+
+<tr>
+<td>
+<label>Select Course</label><br>
+<select>
+<option>Select...</option>
+<option>HTML</option>
+<option>CSS</option>
+<option>Java</option>
+<option>Python</option>
+</select>
+</td>
+
+<td>
+<label>Date Of Birth</label><br>
+<input type="date">
+</td>
+</tr>
+
+</table>
+
+<br>
+
+<label>Gender</label>
+<div class="gender-row">
+<label><input type="radio" name="gender"> Male</label>
+<label><input type="radio" name="gender"> Female</label>
+</div>
+
+<br>
+
+<label>Select Branch</label>
+<div class="checkbox-row">
+<label><input type="checkbox"> CSE</label>
+<label><input type="checkbox"> IT</label>
+<label><input type="checkbox"> ECE</label>
+<label><input type="checkbox"> Civil</label>
+</div>
+
+<br><br>
+
+<label>Address</label><br>
+<textarea></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit" class="submit-btn">
+
+</form>
+
+</div>
+
+</body>
+</html>
